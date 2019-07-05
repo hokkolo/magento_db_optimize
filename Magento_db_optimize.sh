@@ -1,5 +1,5 @@
 #/bin/bash
-#AUTHOR: GALVIN
+#AUTHOR: GAUTHAM
 #VERSION: 20190605
 
 #Webserver Configuration
@@ -12,7 +12,6 @@ SIZE='100k'
 #script execution and will be removed after
 #execution
 DOMAINS='/var/tmp/domains.txt'
-FILE='/var/tmp/path.txt'
 DBNAME='/var/tmp/dbname.txt'
 MAGE1='/var/tmp/mage1.txt'
 MAGE2='/var/tmp/mage2.txt'
@@ -29,7 +28,6 @@ report_compared_product_index
 report_event
 catalog_compare_item)
 
-:> $FILE
 :> $DBNAME
 :> $DOMAINS
 :> $MAGE1
@@ -52,11 +50,9 @@ for i in `cat $MAGE1`; do
 done;
 
 for i in `cat $DBNAME`; do
-    echo "Database: "$i
     for j in ${TBL[*]}; do
          find /var/lib/mysql/$i/ -name "*$j.ibd" -size +$SIZE -exec du -h {} \; 
     done;
-  echo -e "\n"
 done;
 
          
