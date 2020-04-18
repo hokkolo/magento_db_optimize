@@ -1,4 +1,6 @@
-#Optimize Magento 1 and 2 Database
+**Optimize Magento 1 and Magento 2 Database**
+
+There are many database tables in Magento 1 and Magento 2 engine, that can eat up the server diskspace. 
 
 This is a bash script to truncate all the unwanted tables in the Magento database and reduce the size of the Magento Database. 
 
