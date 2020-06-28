@@ -7,7 +7,9 @@ Built based on cPanel server architecture
 
 ## Howtos
 > Clone the repo
+
 > Open the script, update "HTTP_CONF" in the script to the path of your web server configuration.
+
 > Define the table threshold size at "SIZE"
 
 ## License
