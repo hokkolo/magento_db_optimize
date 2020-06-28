@@ -1,6 +1,6 @@
 #/bin/bash
 #AUTHOR: GAUTHAM
-#VERSION: 20190605
+#VERSION: 20200605
 
 #Webserver Configuration
 HTTP_CONF='/usr/local/apache/conf/httpd.conf'
