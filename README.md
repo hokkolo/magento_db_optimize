@@ -1,9 +1,14 @@
-**Optimize Magento 1 and Magento 2 Database**
+# Description
+Hosting Magento1/2 websites on your server, its important to keep monitoring the diskspace used by unwanted tables in Magento1/2.
+Running [magento_db_optimize](https://github.com/hokkolo/magento_db_optimize) script gives the list and size of unwanted database tables used by Magento websites hosted on the server.
 
-There are many database tables in Magento 1 and Magento 2 engine, that can eat up the server diskspace. 
+## Built Architecture
+Built based on cPanel server architecture
 
-This is a bash script to truncate all the unwanted tables in the Magento database and reduce the size of the Magento Database. 
+## Howtos
+> Clone the repo
+> Open the script, update "HTTP_CONF" in the script to the path of your web server configuration.
+> Define the table threshold size at "SIZE"
 
-The script is currently optimized to run on a cPanel server, this can be changed by updating the "HTTP_CONF" in the scrpt to the path of your web server configuration.
-
-Define the table size at "SIZE"
+## License
+BSD
